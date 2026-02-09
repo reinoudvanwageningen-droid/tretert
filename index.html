@@ -137,10 +137,7 @@
       z-index: 0;
       transform: rotate(25deg);
     }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+
     /* Fancy underline for links */
     .fancy-link {
       background-image: linear-gradient(transparent 70%, rgba(240, 95, 34, 0.25) 0);
@@ -182,10 +179,7 @@
       <div class="flex justify-between items-center h-16 md:h-20">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center gap-2 md:gap-3">
-          <div class="concept-logo w-10 h-10 md:w-12 md:h-12 rounded-full shadow-soft text-white font-bold text-xs flex flex-col justify-center items-center leading-none">
-            <span class="z-10 relative top-1 text-[8px] md:text-[10px]">CAPS</span>
-            <span class="z-10 relative top-1 text-[5px] md:text-[6px] tracking-widest">CONSULT</span>
-          </div>
+          <img src="images/caps-consult-logo.png" alt="Caps Consult logo" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-soft object-cover" />
           <div>
             <span class="block text-caps-blue font-extrabold text-lg md:text-xl leading-none tracking-tight">CAPS</span>
             <span class="block text-caps-orange font-extrabold text-xs md:text-sm leading-none tracking-wide">CONSULT</span>
@@ -438,7 +432,7 @@
         <div class="lg:w-1/2 relative order-1 lg:order-2 w-full">
           <div class="bg-white/10 p-3 md:p-4 rounded-2xl shadow-soft2 transform -rotate-1 hover:rotate-0 transition duration-500 border border-white/10">
             <div class="relative overflow-hidden rounded-xl">
-              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80" alt="Scheepswerf met kranen en dok" class="rounded-xl w-full object-cover h-64 md:h-96 grayscale hover:grayscale-0 transition duration-500" />
+              <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met scheepswerf en kranen" class="rounded-xl w-full object-cover h-64 md:h-96 grayscale hover:grayscale-0 transition duration-500" />
               <div class="absolute inset-0 ring-1 ring-white/10 rounded-xl pointer-events-none"></div>
             </div>
           </div>
@@ -462,21 +456,21 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <article class="bg-white rounded-2xl shadow-soft border border-gray-100 overflow-hidden group">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Containerschip bij schemering" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met schepen en kranen" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue">Zeeschepen</h4>
             <p class="text-sm text-gray-600 mt-2">Ondersteuning bij trials, delivery en oplevering op zee.</p>
           </div>
         </article>
         <article class="bg-white rounded-2xl shadow-soft border border-gray-100 overflow-hidden group">
-          <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80" alt="Scheepswerf met dok en hijskranen" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue">Werfcontrole</h4>
             <p class="text-sm text-gray-600 mt-2">Dagelijkse voortgang, kwaliteitsbewaking en planning op de werf.</p>
           </div>
         </article>
         <article class="bg-white rounded-2xl shadow-soft border border-gray-100 overflow-hidden group">
-          <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80&sat=-35" alt="Dry dock en casco in aanbouw" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue">Casco &amp; outfitting</h4>
             <p class="text-sm text-gray-600 mt-2">Van staal tot afbouw: toezicht op detail en opleverpunten.</p>
@@ -484,11 +478,10 @@
         </article>
       </div>
 
-      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="Zeeschip op volle snelheid" class="rounded-2xl shadow-soft h-40 md:h-44 w-full object-cover" />
-        <img src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?auto=format&fit=crop&w=900&q=80" alt="Kade met scheepswerven" class="rounded-2xl shadow-soft h-40 md:h-44 w-full object-cover" />
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80&sat=-25" alt="Containerschip en kranen" class="rounded-2xl shadow-soft h-40 md:h-44 w-full object-cover" />
-        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80" alt="Werf tijdens avondlicht" class="rounded-2xl shadow-soft h-40 md:h-44 w-full object-cover" />
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="rounded-2xl shadow-soft h-40 md:h-52 w-full object-cover" />
+        <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met kranen en schepen" class="rounded-2xl shadow-soft h-40 md:h-52 w-full object-cover" />
+        <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek bij haven" class="rounded-2xl shadow-soft h-40 md:h-52 w-full object-cover" />
       </div>
     </div>
   </section>
@@ -510,9 +503,7 @@
         <!-- Brand -->
         <div class="text-center md:text-left">
           <div class="flex items-center justify-center md:justify-start gap-2 mb-6">
-            <div class="concept-logo w-10 h-10 rounded-full shadow-soft text-white font-bold text-[8px] flex flex-col justify-center items-center leading-none bg-white/10 border border-white/15">
-              <span class="z-10 relative top-0.5">CAPS</span>
-            </div>
+            <img src="images/caps-consult-logo.png" alt="Caps Consult logo" class="w-10 h-10 rounded-full shadow-soft object-cover" />
             <div class="text-left">
               <span class="block font-black text-xl leading-none">CAPS</span>
               <span class="block text-caps-orange font-black text-sm leading-none">CONSULT</span>
