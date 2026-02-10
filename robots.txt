@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /bezoekers.html
+
+Sitemap: https://capsconsult.nl/sitemap.xml

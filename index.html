@@ -18,18 +18,13 @@
   <meta name="twitter:title" content="Caps Consult | Project- en Werkvoorbereiding in de Scheepsbouw" />
   <meta name="twitter:description" content="Caps Consult ondersteunt scheepsbouwprojecten met project- en werkvoorbereiding, werfbegeleiding en oplevering." />
   <meta name="twitter:image" content="https://capsconsult.nl/images/kraaninstallatie-scheepsdek.jpeg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" href="images/kraaninstallatie-scheepsdek.jpeg" />
+  <link rel="preload" as="image" href="images/kraaninstallatie-scheepsdek-1920.webp" />
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS (self-hosted) -->
+  <script src="vendor/tailwind/tailwindcdn.js"></script>
 
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- Google Fonts: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <!-- FontAwesome Icons (self-hosted) -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
 
   <script>
     (function () {
@@ -50,7 +45,7 @@
             },
           },
           fontFamily: {
-            sans: ["Inter", "sans-serif"],
+            sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Arial", "sans-serif"],
           },
           keyframes: {
             floaty: {
@@ -290,7 +285,7 @@
   <!-- Hero -->
   <section id="home" class="relative min-h-[max(480px,100svh)] sm:min-h-[max(560px,100svh)] md:min-h-[max(560px,100dvh)] flex items-center justify-center diagonal-divider overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover scale-[1.02]" />
+      <img src="images/kraaninstallatie-scheepsdek-1280.webp" srcset="images/kraaninstallatie-scheepsdek-1280.webp 1280w, images/kraaninstallatie-scheepsdek-1920.webp 1920w" sizes="100vw" alt="Kraaninstallatie op scheepsdek" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover scale-[1.02]" />
       <div class="absolute inset-0 hero-overlay"></div>
 
       <!-- Subtiele grid/filmgrain vibe -->
@@ -503,10 +498,10 @@
         <div class="lg:w-1/2 relative order-1 lg:order-2 w-full">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
             <div class="bg-white/10 p-2 md:p-3 rounded-2xl shadow-soft2 transform -rotate-1 hover:rotate-0 transition duration-500 border border-white/10">
-              <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift met staalkabels op scheepswerf" width="4000" height="2252" loading="lazy" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
+              <img src="images/kraanlift-vanaf-dek-1280.webp" srcset="images/kraanlift-vanaf-dek-1280.webp 1280w, images/kraanlift-vanaf-dek-1920.webp 1920w" sizes="(min-width: 1024px) 32vw, (min-width: 640px) 50vw, 100vw" alt="Kraanlift met staalkabels op scheepswerf" width="1920" height="1080" loading="lazy" decoding="async" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
             </div>
             <div class="bg-white/10 p-2 md:p-3 rounded-2xl shadow-soft2 transform rotate-1 hover:rotate-0 transition duration-500 border border-white/10 mt-6">
-              <img src="images/staalkabel-scheepsdek.jpeg" alt="Versleten staalkabel op scheepsdek" width="1080" height="1920" loading="lazy" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
+              <img src="images/staalkabel-scheepsdek-540.webp" srcset="images/staalkabel-scheepsdek-540.webp 540w, images/staalkabel-scheepsdek-900.webp 900w" sizes="(min-width: 1024px) 32vw, (min-width: 640px) 50vw, 100vw" alt="Versleten staalkabel op scheepsdek" width="900" height="1600" loading="lazy" decoding="async" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
             </div>
           </div>
         </div>
@@ -529,21 +524,21 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <article class="bg-white dark:bg-slate-900 rounded-2xl shadow-soft border border-gray-100 dark:border-slate-700 overflow-hidden group">
-          <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met schepen en kranen" width="5120" height="2880" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/luchtfoto-haven-1280.webp" srcset="images/luchtfoto-haven-1280.webp 1280w, images/luchtfoto-haven-1920.webp 1920w" sizes="(min-width: 768px) 33vw, 100vw" alt="Luchtfoto haven met schepen en kranen" width="1920" height="1080" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue dark:text-white">Retrofit vrachtschip</h4>
             <p class="text-sm text-gray-600 dark:text-slate-200 mt-2">Voorbereiding van werkpakketten, planning en leveranciersafstemming voor een retrofit met minimale operationele stilstand.</p>
           </div>
         </article>
         <article class="bg-white dark:bg-slate-900 rounded-2xl shadow-soft border border-gray-100 dark:border-slate-700 overflow-hidden group">
-          <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraaninstallatie-scheepsdek-1280.webp" srcset="images/kraaninstallatie-scheepsdek-1280.webp 1280w, images/kraaninstallatie-scheepsdek-1920.webp 1920w" sizes="(min-width: 768px) 33vw, 100vw" alt="Kraaninstallatie op scheepsdek" width="1920" height="1080" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue dark:text-white">Nieuwbouw werftraject</h4>
             <p class="text-sm text-gray-600 dark:text-slate-200 mt-2">Ondersteuning vanaf engineering tot werfstart, met focus op haalbare planning en strakke revisiebeheersing.</p>
           </div>
         </article>
         <article class="bg-white dark:bg-slate-900 rounded-2xl shadow-soft border border-gray-100 dark:border-slate-700 overflow-hidden group">
-          <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek" width="4000" height="2252" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraanlift-vanaf-dek-1280.webp" srcset="images/kraanlift-vanaf-dek-1280.webp 1280w, images/kraanlift-vanaf-dek-1920.webp 1920w" sizes="(min-width: 768px) 33vw, 100vw" alt="Kraanlift vanaf scheepsdek" width="1920" height="1080" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue dark:text-white">Casco &amp; outfitting</h4>
             <p class="text-sm text-gray-600 dark:text-slate-200 mt-2">Coördinatie van uitvoering en restpunten om een voorspelbare oplevering en soepele overdracht te realiseren.</p>
@@ -552,10 +547,10 @@
       </div>
 
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/staalkabel-scheepsdek.jpeg" alt="Staalkabel inspectie op scheepsdek" width="1080" height="1920" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met kranen en schepen" width="5120" height="2880" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek bij haven" width="4000" height="2252" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/kraaninstallatie-scheepsdek-1280.webp" srcset="images/kraaninstallatie-scheepsdek-1280.webp 1280w, images/kraaninstallatie-scheepsdek-1920.webp 1920w" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" alt="Kraaninstallatie op scheepsdek" width="1920" height="1080" loading="lazy" decoding="async" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/staalkabel-scheepsdek-540.webp" srcset="images/staalkabel-scheepsdek-540.webp 540w, images/staalkabel-scheepsdek-900.webp 900w" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" alt="Staalkabel inspectie op scheepsdek" width="900" height="1600" loading="lazy" decoding="async" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/luchtfoto-haven-1280.webp" srcset="images/luchtfoto-haven-1280.webp 1280w, images/luchtfoto-haven-1920.webp 1920w" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" alt="Luchtfoto haven met kranen en schepen" width="1920" height="1080" loading="lazy" decoding="async" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/kraanlift-vanaf-dek-1280.webp" srcset="images/kraanlift-vanaf-dek-1280.webp 1280w, images/kraanlift-vanaf-dek-1920.webp 1920w" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" alt="Kraanlift vanaf scheepsdek bij haven" width="1920" height="1080" loading="lazy" decoding="async" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
       </div>
     </div>
   </section>
@@ -623,6 +618,7 @@
             <li><a href="#over-ons" class="hover:text-caps-orange transition">Over ons</a></li>
             <li><a href="#referenties" class="hover:text-caps-orange transition">Projecten</a></li>
             <li><a href="cookiebeleid.html" class="hover:text-caps-orange transition">Cookiebeleid</a></li>
+            <li><a href="privacybeleid.html" class="hover:text-caps-orange transition">Privacybeleid</a></li>
           </ul>
         </div>
 
@@ -662,10 +658,18 @@
                 <a href="tel:+31643725043" class="underline underline-offset-2 hover:text-white transition">+31 6 43 72 50 43</a>.
               </p>
             </div>
-            <div class="flex items-center gap-3">
+            <div class="flex flex-wrap items-center gap-3">
               <a href="cookiebeleid.html" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-white/50 hover:border-caps-orange hover:text-caps-orange transition font-semibold whitespace-nowrap">
                 Cookiebeleid
                 <i class="fa-solid fa-cookie-bite"></i>
+              </a>
+              <a href="privacybeleid.html" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-white/50 hover:border-caps-orange hover:text-caps-orange transition font-semibold whitespace-nowrap">
+                Privacybeleid
+                <i class="fa-solid fa-shield-halved"></i>
+              </a>
+              <a href="bezoekers.html" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-white/50 hover:border-caps-orange hover:text-caps-orange transition font-semibold whitespace-nowrap">
+                Bezoekers
+                <i class="fa-solid fa-chart-line"></i>
               </a>
             </div>
           </div>
@@ -673,6 +677,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="assets/visitor-tracker.js" defer></script>
 
   <script>
     // Navbar scroll effect
