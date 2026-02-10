@@ -4,6 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caps Consult | Project- &amp; Werkvoorbereiding Scheepsbouw</title>
+  <meta name="description" content="Caps Consult ondersteunt scheepsbouwprojecten met project- en werkvoorbereiding, werfbegeleiding en oplevering. Praktisch, onafhankelijk en hands-on." />
+  <meta name="theme-color" content="#0F3057" />
+  <link rel="canonical" href="https://capsconsult.nl/" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Caps Consult | Project- &amp; Werkvoorbereiding Scheepsbouw" />
+  <meta property="og:description" content="Caps Consult ondersteunt scheepsbouwprojecten met project- en werkvoorbereiding, werfbegeleiding en oplevering." />
+  <meta property="og:url" content="https://capsconsult.nl/" />
+  <meta property="og:site_name" content="Caps Consult" />
+  <meta property="og:image" content="https://capsconsult.nl/images/kraaninstallatie-scheepsdek.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Caps Consult | Project- &amp; Werkvoorbereiding Scheepsbouw" />
+  <meta name="twitter:description" content="Caps Consult ondersteunt scheepsbouwprojecten met project- en werkvoorbereiding, werfbegeleiding en oplevering." />
+  <meta name="twitter:image" content="https://capsconsult.nl/images/kraaninstallatie-scheepsdek.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="images/kraaninstallatie-scheepsdek.jpeg" />
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -164,7 +181,9 @@
       .animate-fadeIn,
       .animate-floaty,
       .animate-shimmer,
-      .animate-glow {
+      .animate-glow,
+      .animate-pulse,
+      .animate-bounce {
         animation: none !important;
       }
 
@@ -186,7 +205,9 @@
           "logo": "https://capsconsult.nl/images/caps-consult-logo.png",
           "email": "capsconsult@outlook.com",
           "telephone": "+31 6 43 72 50 43",
-          "sameAs": []
+          "sameAs": [
+            "https://www.linkedin.com/in/matthias-van-wageningen-6a7758157"
+          ]
         },
         {
           "@type": "LocalBusiness",
@@ -213,7 +234,7 @@
 
 <body class="font-sans text-gray-800 bg-white dark:bg-slate-950 dark:text-slate-100 flex flex-col min-h-screen transition-colors duration-300">
   <!-- Skip link -->
-  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-caps-blue dark:focus:bg-slate-900 dark:focus:text-slate-100 focus:px-4 focus:py-2 focus:rounded-lg shadow-soft">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-caps-blue dark:focus:bg-slate-900 dark:focus:text-slate-100 focus:px-4 focus:py-2 focus:rounded-lg shadow-soft">
     Naar content
   </a>
 
@@ -223,7 +244,7 @@
       <div class="flex justify-between items-center h-16 md:h-20">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center gap-2 md:gap-3">
-          <img src="images/caps-consult-logo.png" alt="Caps Consult logo" width="3375" height="3375" loading="lazy" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-soft object-cover" />
+          <img src="images/caps-consult-logo.png" alt="Caps Consult logo" width="3375" height="3375" loading="eager" decoding="async" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-soft object-cover" />
           <div>
             <span class="block text-caps-blue font-extrabold text-lg md:text-xl leading-none tracking-tight">CAPS</span>
             <span class="block text-caps-orange font-extrabold text-xs md:text-sm leading-none tracking-wide">CONSULT</span>
@@ -236,7 +257,7 @@
           <a href="#diensten" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Expertise</a>
           <a href="#over-ons" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Over ons</a>
           <a href="#referenties" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Projecten</a>
-          <button onclick="toggleTheme()" id="theme-toggle-desktop" aria-label="Zet donkere modus aan of uit" class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 dark:border-slate-700 text-caps-blue dark:text-slate-200 hover:text-caps-orange hover:border-caps-orange transition">
+          <button onclick="toggleTheme()" id="theme-toggle-desktop" aria-label="Zet donkere modus aan of uit" class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 dark:border-slate-700 text-caps-blue dark:text-slate-200 hover:text-caps-orange hover:border-caps-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caps-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950 transition">
             <i class="fa-solid fa-moon"></i>
           </button>
           <a href="#contact" class="bg-caps-orange text-white px-5 py-2.5 rounded-full font-extrabold hover:bg-orange-600 transition shadow-soft transform hover:-translate-y-0.5">
@@ -246,10 +267,10 @@
 
         <!-- Mobile Menu Button -->
         <div class="md:hidden flex items-center">
-          <button onclick="toggleTheme()" id="theme-toggle-mobile" aria-label="Zet donkere modus aan of uit" class="p-2 mr-1 rounded-full border border-gray-200 dark:border-slate-700 text-caps-blue dark:text-slate-200 hover:text-caps-orange transition">
+          <button onclick="toggleTheme()" id="theme-toggle-mobile" aria-label="Zet donkere modus aan of uit" class="p-2 mr-1 rounded-full border border-gray-200 dark:border-slate-700 text-caps-blue dark:text-slate-200 hover:text-caps-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caps-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950 transition">
             <i class="fa-solid fa-moon"></i>
           </button>
-          <button onclick="toggleMobileMenu()" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button" class="p-2 text-caps-blue dark:text-slate-200 hover:text-caps-orange focus:outline-none">
+          <button onclick="toggleMobileMenu()" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" id="mobile-menu-button" class="p-2 rounded-md text-caps-blue dark:text-slate-200 hover:text-caps-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caps-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950">
             <i class="fa-solid fa-bars text-2xl"></i>
           </button>
         </div>
@@ -267,10 +288,11 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <!-- Hero -->
   <section id="home" class="relative min-h-[max(480px,100svh)] sm:min-h-[max(560px,100svh)] md:min-h-[max(560px,100dvh)] flex items-center justify-center diagonal-divider overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="eager" class="w-full h-full object-cover scale-[1.02]" />
+      <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover scale-[1.02]" />
       <div class="absolute inset-0 hero-overlay"></div>
 
       <!-- Subtiele grid/filmgrain vibe -->
@@ -509,21 +531,21 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <article class="bg-white dark:bg-slate-900 rounded-2xl shadow-soft border border-gray-100 dark:border-slate-700 overflow-hidden group">
-          <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met schepen en kranen" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met schepen en kranen" width="5120" height="2880" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue dark:text-white">Retrofit vrachtschip</h4>
             <p class="text-sm text-gray-600 dark:text-slate-200 mt-2">Doorlooptijd van engineering tot werfstart met 18% verkort door strakkere werkpakketten en afstemming met leveranciers.</p>
           </div>
         </article>
         <article class="bg-white dark:bg-slate-900 rounded-2xl shadow-soft border border-gray-100 dark:border-slate-700 overflow-hidden group">
-          <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue dark:text-white">Nieuwbouw werftraject</h4>
             <p class="text-sm text-gray-600 dark:text-slate-200 mt-2">Faalkosten met 22% verlaagd door vroegtijdige clashcontrole en verbeterde revisiebeheersing van tekeningen.</p>
           </div>
         </article>
         <article class="bg-white dark:bg-slate-900 rounded-2xl shadow-soft border border-gray-100 dark:border-slate-700 overflow-hidden group">
-          <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek" width="4000" height="2252" loading="lazy" decoding="async" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue dark:text-white">Casco &amp; outfitting</h4>
             <p class="text-sm text-gray-600 dark:text-slate-200 mt-2">Opleverbetrouwbaarheid verhoogd naar 96% door dagelijkse voortgangscontrole en strak punchlist-management.</p>
@@ -562,7 +584,7 @@
           <i class="fa-solid fa-envelope text-caps-orange"></i>
           <span class="font-semibold text-caps-blue dark:text-slate-100">capsconsult@outlook.com</span>
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700">
+        <a href="https://www.linkedin.com/in/matthias-van-wageningen-6a7758157?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="Bekijk LinkedIn-profiel van Matthias van Wageningen (opent in nieuw tabblad)" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700">
           <i class="fa-brands fa-linkedin text-caps-orange"></i>
           <span class="font-semibold text-caps-blue dark:text-slate-100">LinkedIn</span>
         </a>
@@ -573,6 +595,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer id="contact" class="bg-caps-blue text-white pt-10 pb-10 border-t border-white/10 dark:bg-slate-900 dark:border-slate-700">
@@ -618,7 +642,7 @@
             Stuur bericht
             <i class="fa-solid fa-paper-plane"></i>
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 border border-white/50 px-6 py-3 rounded-xl font-black hover:border-caps-orange hover:text-caps-orange transition w-full text-center">
+          <a href="https://www.linkedin.com/in/matthias-van-wageningen-6a7758157?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="Bekijk LinkedIn-profiel van Matthias van Wageningen (opent in nieuw tabblad)" class="inline-flex items-center justify-center gap-2 border border-white/50 px-6 py-3 rounded-xl font-black hover:border-caps-orange hover:text-caps-orange transition w-full text-center">
             Volg op LinkedIn
             <i class="fa-brands fa-linkedin"></i>
           </a>
@@ -653,8 +677,13 @@
     }
 
     function updateThemeToggleIcons(isDark) {
-      document.querySelectorAll("#theme-toggle-desktop i, #theme-toggle-mobile i").forEach((icon) => {
-        icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+      document.querySelectorAll("#theme-toggle-desktop, #theme-toggle-mobile").forEach((toggleButton) => {
+        const icon = toggleButton.querySelector("i");
+        if (icon) {
+          icon.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+        }
+        toggleButton.setAttribute("aria-pressed", String(isDark));
+        toggleButton.setAttribute("aria-label", isDark ? "Zet lichte modus aan" : "Zet donkere modus aan");
       });
     }
 
@@ -680,30 +709,46 @@
     });
 
     // Mobile Menu Toggle (with aria)
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+
+    function setMobileMenuOpen(isOpen) {
+      mobileMenu.classList.toggle("hidden", !isOpen);
+      mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+      mobileMenuButton.setAttribute("aria-label", isOpen ? "Sluit menu" : "Open menu");
+      document.body.classList.toggle("overflow-hidden", isOpen);
+    }
+
     function toggleMobileMenu() {
-      const menu = document.getElementById("mobile-menu");
-      const btn = document.getElementById("mobile-menu-button");
-      const isHidden = menu.classList.contains("hidden");
-      if (isHidden) {
-        menu.classList.remove("hidden");
-        btn.setAttribute("aria-expanded", "true");
-      } else {
-        menu.classList.add("hidden");
-        btn.setAttribute("aria-expanded", "false");
-      }
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      setMobileMenuOpen(!isOpen);
     }
 
     // Close menu on resize to desktop
     window.addEventListener("resize", () => {
       if (window.innerWidth >= 768) {
-        const menu = document.getElementById("mobile-menu");
-        const btn = document.getElementById("mobile-menu-button");
-        if (!menu.classList.contains("hidden")) {
-          menu.classList.add("hidden");
-          btn.setAttribute("aria-expanded", "false");
-        }
+        setMobileMenuOpen(false);
       }
     });
+
+    // Close menu with escape key.
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
+        setMobileMenuOpen(false);
+      }
+    });
+
+    // Close menu when clicking outside menu and button.
+    document.addEventListener("click", (event) => {
+      if (mobileMenu.classList.contains("hidden")) {
+        return;
+      }
+      if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+        setMobileMenuOpen(false);
+      }
+    });
+
+    setMobileMenuOpen(false);
 
   </script>
 </body>
