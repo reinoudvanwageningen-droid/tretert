@@ -105,7 +105,7 @@
 
     /* Diagonals */
     .diagonal-divider {
-      clip-path: none;
+      clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
     }
 
     @media (min-width: 768px) {
@@ -277,7 +277,7 @@
 
   <main id="main-content">
   <!-- Hero -->
-  <section id="home" class="relative min-h-[max(480px,100svh)] sm:min-h-[max(560px,100svh)] md:min-h-[max(560px,100dvh)] flex items-center justify-center diagonal-divider overflow-hidden pb-10 md:pb-0">
+  <section id="home" class="relative min-h-[max(480px,100svh)] sm:min-h-[max(560px,100svh)] md:min-h-[max(560px,100dvh)] flex items-start md:items-center justify-center diagonal-divider overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img src="images/kraaninstallatie-scheepsdek-1280.webp" srcset="images/kraaninstallatie-scheepsdek-1280.webp 1280w, images/kraaninstallatie-scheepsdek-1920.webp 1920w" sizes="100vw" alt="Kraaninstallatie op scheepsdek" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover scale-[1.02]" />
       <div class="absolute inset-0 hero-overlay"></div>
