@@ -250,9 +250,6 @@
           <a href="#diensten" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Expertise</a>
           <a href="#over-ons" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Over ons</a>
           <a href="#referenties" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Projecten</a>
-          <button onclick="syncThemeWithSystem()" id="theme-toggle-desktop" aria-label="Kleurmodus volgt apparaatinstelling" title="Kleurmodus volgt apparaatinstelling" class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-200 dark:border-slate-700 text-caps-blue dark:text-slate-200 hover:text-caps-orange hover:border-caps-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caps-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950 transition">
-            <i class="fa-solid fa-moon"></i>
-          </button>
           <a href="#contact" class="bg-caps-orange text-white px-5 py-2.5 rounded-full font-extrabold hover:bg-orange-600 transition shadow-soft transform hover:-translate-y-0.5">
             Contact <i class="fa-solid fa-arrow-right ml-1"></i>
           </a>
@@ -260,9 +257,6 @@
 
         <!-- Mobile Menu Button -->
         <div class="lg:hidden flex items-center">
-          <button onclick="syncThemeWithSystem()" id="theme-toggle-mobile" aria-label="Kleurmodus volgt apparaatinstelling" title="Kleurmodus volgt apparaatinstelling" class="p-2 mr-1 rounded-full border border-gray-200 dark:border-slate-700 text-caps-blue dark:text-slate-200 hover:text-caps-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caps-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950 transition">
-            <i class="fa-solid fa-moon"></i>
-          </button>
           <button onclick="toggleMobileMenu()" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" id="mobile-menu-button" class="p-2 rounded-md text-caps-blue dark:text-slate-200 hover:text-caps-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caps-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950">
             <i class="fa-solid fa-bars text-2xl"></i>
           </button>
@@ -325,18 +319,18 @@
         </div>
 
         <!-- Mini credibility strip -->
-        <div class="mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 justify-center items-center text-white/85">
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+        <div class="mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center text-white w-full sm:w-auto">
+          <div class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-slate-950/45 sm:bg-white/10 backdrop-blur-md border border-white/30 shadow-soft">
             <i class="fa-solid fa-drafting-compass text-caps-orange"></i>
-            <span class="text-sm font-semibold">Project- en werkvoorbereiding</span>
+            <span class="text-sm font-bold text-white drop-shadow">Project- en werkvoorbereiding</span>
           </div>
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+          <div class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-slate-950/45 sm:bg-white/10 backdrop-blur-md border border-white/30 shadow-soft">
             <i class="fa-solid fa-compass-drafting text-caps-orange"></i>
-            <span class="text-sm font-semibold">Onafhankelijk en hands-on</span>
+            <span class="text-sm font-bold text-white drop-shadow">Onafhankelijk en hands-on</span>
           </div>
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+          <div class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-slate-950/45 sm:bg-white/10 backdrop-blur-md border border-white/30 shadow-soft">
             <i class="fa-solid fa-clipboard-check text-caps-orange"></i>
-            <span class="text-sm font-semibold">Heldere regie en communicatie</span>
+            <span class="text-sm font-bold text-white drop-shadow">Heldere regie en communicatie</span>
           </div>
         </div>
       </div>
@@ -631,24 +625,7 @@
     function applySystemTheme() {
       const isDark = systemThemeQuery.matches;
       document.documentElement.classList.toggle("dark", isDark);
-      updateThemeToggleIcons(isDark);
       updateNavBackground(window.scrollY > 20);
-    }
-
-    function syncThemeWithSystem() {
-      applySystemTheme();
-    }
-
-    function updateThemeToggleIcons(isDark) {
-      document.querySelectorAll("#theme-toggle-desktop, #theme-toggle-mobile").forEach((toggleButton) => {
-        const icon = toggleButton.querySelector("i");
-        if (icon) {
-          icon.className = isDark ? "fa-solid fa-moon" : "fa-solid fa-sun";
-        }
-        toggleButton.setAttribute("aria-pressed", "false");
-        toggleButton.setAttribute("aria-label", isDark ? "Kleurmodus volgt apparaatinstelling (donker)" : "Kleurmodus volgt apparaatinstelling (licht)");
-        toggleButton.setAttribute("title", isDark ? "Kleurmodus volgt apparaatinstelling (donker)" : "Kleurmodus volgt apparaatinstelling (licht)");
-      });
     }
 
     function updateNavBackground(scrolled) {
