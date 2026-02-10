@@ -165,6 +165,42 @@
       }
     }
   </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://capsconsult.nl/#organization",
+          "name": "Caps Consult",
+          "url": "https://capsconsult.nl",
+          "logo": "https://capsconsult.nl/images/caps-consult-logo.png",
+          "email": "capsconsult@outlook.com",
+          "telephone": "+31 6 43 72 50 43",
+          "sameAs": []
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://capsconsult.nl/#localbusiness",
+          "name": "Caps Consult",
+          "url": "https://capsconsult.nl",
+          "image": "https://capsconsult.nl/images/kraaninstallatie-scheepsdek.jpeg",
+          "email": "capsconsult@outlook.com",
+          "telephone": "+31 6 43 72 50 43",
+          "priceRange": "€€",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mastenbroek 13",
+            "postalCode": "4822 XG",
+            "addressLocality": "Breda",
+            "addressCountry": "NL"
+          },
+          "areaServed": "Nederland"
+        }
+      ]
+    }
+  </script>
 </head>
 
 <body class="font-sans text-gray-800 bg-white flex flex-col min-h-screen">
@@ -179,7 +215,7 @@
       <div class="flex justify-between items-center h-16 md:h-20">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center gap-2 md:gap-3">
-          <img src="images/caps-consult-logo.png" alt="Caps Consult logo" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-soft object-cover" />
+          <img src="images/caps-consult-logo.png" alt="Caps Consult logo" width="3375" height="3375" loading="lazy" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-soft object-cover" />
           <div>
             <span class="block text-caps-blue font-extrabold text-lg md:text-xl leading-none tracking-tight">CAPS</span>
             <span class="block text-caps-orange font-extrabold text-xs md:text-sm leading-none tracking-wide">CONSULT</span>
@@ -220,7 +256,7 @@
   <!-- Hero -->
   <section id="home" class="relative h-[100dvh] min-h-[560px] flex items-center justify-center diagonal-divider overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="w-full h-full object-cover scale-[1.02]" />
+      <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="eager" class="w-full h-full object-cover scale-[1.02]" />
       <div class="absolute inset-0 hero-overlay"></div>
 
       <!-- Subtiele grid/filmgrain vibe -->
@@ -250,12 +286,12 @@
 
         <div class="flex flex-col sm:flex-row justify-center gap-4 px-4 sm:px-0">
           <a href="#contact" class="group bg-caps-orange text-white px-8 py-4 rounded-full font-extrabold text-lg hover:bg-orange-600 transition shadow-soft w-full sm:w-auto">
-            Neem contact op
+            Plan een kennismaking
             <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
           </a>
 
           <a href="#diensten" class="bg-white/10 backdrop-blur-md border border-white/25 text-white px-8 py-4 rounded-full font-extrabold text-lg hover:bg-white hover:text-caps-blue transition shadow-soft w-full sm:w-auto">
-            Bekijk onze diensten
+            Bekijk expertise
           </a>
         </div>
 
@@ -433,10 +469,10 @@
         <div class="lg:w-1/2 relative order-1 lg:order-2 w-full">
           <div class="grid grid-cols-2 gap-3 md:gap-4">
             <div class="bg-white/10 p-2 md:p-3 rounded-2xl shadow-soft2 transform -rotate-1 hover:rotate-0 transition duration-500 border border-white/10">
-              <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift met staalkabels op scheepswerf" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
+              <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift met staalkabels op scheepswerf" width="4000" height="2252" loading="lazy" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
             </div>
             <div class="bg-white/10 p-2 md:p-3 rounded-2xl shadow-soft2 transform rotate-1 hover:rotate-0 transition duration-500 border border-white/10 mt-6">
-              <img src="images/staalkabel-scheepsdek.jpeg" alt="Versleten staalkabel op scheepsdek" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
+              <img src="images/staalkabel-scheepsdek.jpeg" alt="Versleten staalkabel op scheepsdek" width="1080" height="1920" loading="lazy" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
             </div>
           </div>
         </div>
@@ -459,33 +495,33 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <article class="bg-white rounded-2xl shadow-soft border border-gray-100 overflow-hidden group">
-          <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met schepen en kranen" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met schepen en kranen" width="5120" height="2880" loading="lazy" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
-            <h4 class="font-black text-lg text-caps-blue">Nieuwbouw &amp; refit</h4>
-            <p class="text-sm text-gray-600 mt-2">Projectvoorbereiding voor nieuwbouw en refitprojecten van zeeschepen.</p>
+            <h4 class="font-black text-lg text-caps-blue">Retrofit vrachtschip</h4>
+            <p class="text-sm text-gray-600 mt-2">Doorlooptijd van engineering tot werfstart met 18% verkort door strakkere werkpakketten en afstemming met leveranciers.</p>
           </div>
         </article>
         <article class="bg-white rounded-2xl shadow-soft border border-gray-100 overflow-hidden group">
-          <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="lazy" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
-            <h4 class="font-black text-lg text-caps-blue">Werfbegeleiding</h4>
-            <p class="text-sm text-gray-600 mt-2">Werkvoorbereiding en dagelijkse begeleiding op de werf: kwaliteit, planning en voortgang.</p>
+            <h4 class="font-black text-lg text-caps-blue">Nieuwbouw werftraject</h4>
+            <p class="text-sm text-gray-600 mt-2">Faalkosten met 22% verlaagd door vroegtijdige clashcontrole en verbeterde revisiebeheersing van tekeningen.</p>
           </div>
         </article>
         <article class="bg-white rounded-2xl shadow-soft border border-gray-100 overflow-hidden group">
-          <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
+          <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek" width="4000" height="2252" loading="lazy" class="w-full h-56 object-cover group-hover:scale-[1.02] transition duration-500" />
           <div class="p-6">
             <h4 class="font-black text-lg text-caps-blue">Casco &amp; outfitting</h4>
-            <p class="text-sm text-gray-600 mt-2">Van staalwerk tot afbouw: werkvoorbereiding, toezicht en oplevering.</p>
+            <p class="text-sm text-gray-600 mt-2">Opleverbetrouwbaarheid verhoogd naar 96% door dagelijkse voortgangscontrole en strak punchlist-management.</p>
           </div>
         </article>
       </div>
 
       <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/staalkabel-scheepsdek.jpeg" alt="Staalkabel inspectie op scheepsdek" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met kranen en schepen" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek bij haven" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/staalkabel-scheepsdek.jpeg" alt="Staalkabel inspectie op scheepsdek" width="1080" height="1920" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met kranen en schepen" width="5120" height="2880" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+        <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek bij haven" width="4000" height="2252" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
       </div>
     </div>
   </section>
@@ -500,6 +536,26 @@
     </div>
   </section>
 
+  <!-- Contact strip -->
+  <section class="bg-white border-t border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm md:text-base">
+        <a href="tel:+31643725043" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition">
+          <i class="fa-solid fa-phone text-caps-orange"></i>
+          <span class="font-semibold text-caps-blue">+31 6 43 72 50 43</span>
+        </a>
+        <a href="mailto:capsconsult@outlook.com" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition">
+          <i class="fa-solid fa-envelope text-caps-orange"></i>
+          <span class="font-semibold text-caps-blue">capsconsult@outlook.com</span>
+        </a>
+        <div class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3">
+          <i class="fa-solid fa-clock text-caps-orange"></i>
+          <span class="font-semibold text-caps-blue">Reactie binnen 24 uur</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer id="contact" class="bg-caps-blue text-white pt-10 pb-10 border-t border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -507,7 +563,7 @@
         <!-- Brand -->
         <div class="text-center md:text-left">
           <div class="flex items-center justify-center md:justify-start gap-2 mb-6">
-            <img src="images/caps-consult-logo.png" alt="Caps Consult logo" class="w-10 h-10 rounded-full shadow-soft object-cover" />
+            <img src="images/caps-consult-logo.png" alt="Caps Consult logo" width="3375" height="3375" loading="lazy" class="w-10 h-10 rounded-full shadow-soft object-cover" />
             <div class="text-left">
               <span class="block font-black text-xl leading-none">CAPS</span>
               <span class="block text-caps-orange font-black text-sm leading-none">CONSULT</span>
