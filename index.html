@@ -230,7 +230,7 @@
   </script>
 </head>
 
-<body class="font-sans text-gray-800 bg-white dark:bg-slate-950 dark:text-slate-100 flex flex-col min-h-screen transition-colors duration-300">
+<body class="font-sans text-gray-800 bg-white dark:bg-slate-950 dark:text-slate-100 flex flex-col min-h-screen overflow-x-hidden transition-colors duration-300">
   <!-- Skip link -->
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-caps-blue dark:focus:bg-slate-900 dark:focus:text-slate-100 focus:px-4 focus:py-2 focus:rounded-lg shadow-soft">
     Naar content
@@ -244,13 +244,13 @@
         <div class="flex-shrink-0 flex items-center gap-2 md:gap-3">
           <img src="images/caps-consult-logo.png" alt="Caps Consult logo" width="3375" height="3375" loading="eager" decoding="async" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-soft object-cover" />
           <div>
-            <span class="block text-caps-blue font-extrabold text-lg md:text-xl leading-none tracking-tight">CAPS</span>
+            <span class="block text-caps-blue font-extrabold text-base sm:text-lg md:text-xl leading-none tracking-tight">CAPS</span>
             <span class="block text-caps-orange font-extrabold text-xs md:text-sm leading-none tracking-wide">CONSULT</span>
           </div>
         </div>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8 items-center">
+        <div class="hidden lg:flex space-x-8 items-center">
           <a href="#home" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Home</a>
           <a href="#diensten" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Expertise</a>
           <a href="#over-ons" class="text-gray-700 dark:text-slate-200 hover:text-caps-orange font-semibold transition">Over ons</a>
@@ -264,7 +264,7 @@
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="md:hidden flex items-center">
+        <div class="lg:hidden flex items-center">
           <button onclick="syncThemeWithSystem()" id="theme-toggle-mobile" aria-label="Kleurmodus volgt apparaatinstelling" title="Kleurmodus volgt apparaatinstelling" class="p-2 mr-1 rounded-full border border-gray-200 dark:border-slate-700 text-caps-blue dark:text-slate-200 hover:text-caps-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caps-orange focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950 transition">
             <i class="fa-solid fa-moon"></i>
           </button>
@@ -276,7 +276,7 @@
     </div>
 
     <!-- Mobile Menu Panel -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800 absolute w-full shadow-soft2 top-16">
+    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800 absolute w-full shadow-soft2 top-16 md:top-20">
       <div class="px-4 pt-4 pb-6 space-y-2">
         <a href="#home" onclick="toggleMobileMenu()" class="block px-4 py-3 text-lg font-semibold text-gray-700 dark:text-slate-200 hover:text-caps-orange hover:bg-gray-50 dark:hover:bg-slate-800 rounded-xl active:bg-gray-100 dark:active:bg-slate-700">Home</a>
         <a href="#diensten" onclick="toggleMobileMenu()" class="block px-4 py-3 text-lg font-semibold text-gray-700 dark:text-slate-200 hover:text-caps-orange hover:bg-gray-50 dark:hover:bg-slate-800 rounded-xl active:bg-gray-100 dark:active:bg-slate-700">Expertise</a>
@@ -501,7 +501,7 @@
         </div>
 
         <div class="lg:w-1/2 relative order-1 lg:order-2 w-full">
-          <div class="grid grid-cols-2 gap-3 md:gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
             <div class="bg-white/10 p-2 md:p-3 rounded-2xl shadow-soft2 transform -rotate-1 hover:rotate-0 transition duration-500 border border-white/10">
               <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift met staalkabels op scheepswerf" width="4000" height="2252" loading="lazy" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
             </div>
@@ -551,7 +551,7 @@
         </article>
       </div>
 
-      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" width="4000" height="2252" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
         <img src="images/staalkabel-scheepsdek.jpeg" alt="Staalkabel inspectie op scheepsdek" width="1080" height="1920" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
         <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met kranen en schepen" width="5120" height="2880" loading="lazy" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
@@ -573,22 +573,22 @@
   <!-- Contact strip -->
   <section class="bg-white border-t border-b border-gray-200 dark:bg-slate-950 dark:border-slate-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm md:text-base">
-        <a href="tel:+31643725043" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700">
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 text-sm md:text-base">
+        <a href="tel:+31643725043" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700 min-w-0">
           <i class="fa-solid fa-phone text-caps-orange"></i>
-          <span class="font-semibold text-caps-blue dark:text-slate-100">+31 6 43 72 50 43</span>
+          <span class="font-semibold text-caps-blue dark:text-slate-100 break-all">+31 6 43 72 50 43</span>
         </a>
-        <a href="mailto:capsconsult@outlook.com" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700">
+        <a href="mailto:capsconsult@outlook.com" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700 min-w-0">
           <i class="fa-solid fa-envelope text-caps-orange"></i>
-          <span class="font-semibold text-caps-blue dark:text-slate-100">capsconsult@outlook.com</span>
+          <span class="font-semibold text-caps-blue dark:text-slate-100 break-all">capsconsult@outlook.com</span>
         </a>
-        <a href="https://www.linkedin.com/in/matthias-van-wageningen-6a7758157/" target="_blank" rel="noopener noreferrer" aria-label="Bekijk LinkedIn-profiel van Matthias van Wageningen (opent in nieuw tabblad)" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700">
+        <a href="https://www.linkedin.com/in/matthias-van-wageningen-6a7758157/" target="_blank" rel="noopener noreferrer" aria-label="Bekijk LinkedIn-profiel van Matthias van Wageningen (opent in nieuw tabblad)" class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 hover:border-caps-orange transition dark:border-slate-700 min-w-0">
           <i class="fa-brands fa-linkedin text-caps-orange"></i>
-          <span class="font-semibold text-caps-blue dark:text-slate-100">LinkedIn</span>
+          <span class="font-semibold text-caps-blue dark:text-slate-100 break-words">LinkedIn</span>
         </a>
-        <div class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 dark:border-slate-700">
+        <div class="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 dark:border-slate-700 min-w-0">
           <i class="fa-solid fa-clock text-caps-orange"></i>
-          <span class="font-semibold text-caps-blue dark:text-slate-100">Reactie binnen 1 werkdag</span>
+          <span class="font-semibold text-caps-blue dark:text-slate-100 break-words">Reactie binnen 1 werkdag</span>
         </div>
       </div>
     </div>
@@ -728,7 +728,7 @@
 
     // Close menu on resize to desktop
     window.addEventListener("resize", () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setMobileMenuOpen(false);
       }
     });
