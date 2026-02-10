@@ -20,8 +20,8 @@
   <meta name="twitter:image" content="https://reinoudvanwageningen-droid.github.io/capsconsult/images/kraaninstallatie-scheepsdek.jpeg" />
   <link rel="preload" as="image" href="images/kraaninstallatie-scheepsdek-1920.webp" />
 
-  <!-- Tailwind CSS (self-hosted) -->
-  <script src="vendor/tailwind/tailwindcdn.js"></script>
+  <!-- Tailwind CSS (static build) -->
+  <link rel="stylesheet" href="assets/tailwind.css" />
 
   <!-- FontAwesome Icons (self-hosted) -->
   <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
@@ -31,58 +31,6 @@
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       document.documentElement.classList.toggle("dark", prefersDark);
     })();
-
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            caps: {
-              blue: "#0F3057",
-              light: "#1B4965",
-              orange: "#F05F22",
-              gray: "#F3F4F6",
-            },
-          },
-          fontFamily: {
-            sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Arial", "sans-serif"],
-          },
-          keyframes: {
-            floaty: {
-              "0%, 100%": { transform: "translateY(0)" },
-              "50%": { transform: "translateY(-10px)" },
-            },
-            shimmer: {
-              "0%": { backgroundPosition: "0% 50%" },
-              "100%": { backgroundPosition: "200% 50%" },
-            },
-            fadeUp: {
-              "0%": { opacity: 0, transform: "translateY(18px)" },
-              "100%": { opacity: 1, transform: "translateY(0)" },
-            },
-            fadeIn: {
-              "0%": { opacity: 0 },
-              "100%": { opacity: 1 },
-            },
-            glow: {
-              "0%, 100%": { opacity: 0.55 },
-              "50%": { opacity: 0.9 },
-            },
-          },
-          animation: {
-            floaty: "floaty 8s ease-in-out infinite",
-            shimmer: "shimmer 6s linear infinite",
-            fadeUp: "fadeUp 650ms ease-out both",
-            fadeIn: "fadeIn 500ms ease-out both",
-            glow: "glow 3.5s ease-in-out infinite",
-          },
-          boxShadow: {
-            soft: "0 12px 30px rgba(15,48,87,0.12)",
-            soft2: "0 18px 50px rgba(15,48,87,0.18)",
-          },
-        },
-      },
-    };
   </script>
 
   <style>
@@ -270,6 +218,7 @@
         <a href="#home" onclick="toggleMobileMenu()" class="block px-4 py-3 text-lg font-semibold text-gray-700 dark:text-slate-200 hover:text-caps-orange hover:bg-gray-50 dark:hover:bg-slate-800 rounded-xl active:bg-gray-100 dark:active:bg-slate-700">Home</a>
         <a href="#diensten" onclick="toggleMobileMenu()" class="block px-4 py-3 text-lg font-semibold text-gray-700 dark:text-slate-200 hover:text-caps-orange hover:bg-gray-50 dark:hover:bg-slate-800 rounded-xl active:bg-gray-100 dark:active:bg-slate-700">Expertise</a>
         <a href="#over-ons" onclick="toggleMobileMenu()" class="block px-4 py-3 text-lg font-semibold text-gray-700 dark:text-slate-200 hover:text-caps-orange hover:bg-gray-50 dark:hover:bg-slate-800 rounded-xl active:bg-gray-100 dark:active:bg-slate-700">Over ons</a>
+        <a href="#referenties" onclick="toggleMobileMenu()" class="block px-4 py-3 text-lg font-semibold text-gray-700 dark:text-slate-200 hover:text-caps-orange hover:bg-gray-50 dark:hover:bg-slate-800 rounded-xl active:bg-gray-100 dark:active:bg-slate-700">Projecten</a>
         <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-3 text-lg font-extrabold text-white bg-caps-orange rounded-xl text-center shadow-soft mt-3">Neem contact op</a>
       </div>
     </div>

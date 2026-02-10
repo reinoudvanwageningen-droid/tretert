@@ -1,4 +1,13 @@
 (() => {
+  const doNotTrackEnabled =
+    navigator.doNotTrack === "1" ||
+    navigator.msDoNotTrack === "1" ||
+    window.doNotTrack === "1" ||
+    navigator.globalPrivacyControl === true;
+  if (doNotTrackEnabled) {
+    return;
+  }
+
   const counterNamespace = "capsconsult-nl";
   const referrer = document.referrer.toLowerCase();
   const sourceKey = referrer.includes("linkedin.")
@@ -18,7 +27,9 @@
       method: "GET",
       mode: "cors",
       cache: "no-store",
-      keepalive: true
+      keepalive: true,
+      credentials: "omit",
+      referrerPolicy: "no-referrer"
     }).catch(() => {
       // Tracking is best-effort and should never affect page functionality.
     });
