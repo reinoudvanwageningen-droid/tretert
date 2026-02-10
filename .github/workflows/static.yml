@@ -36,7 +36,7 @@ jobs:
       - name: Prepare deploy artifact
         run: |
           mkdir -p .pages
-          cp index.html cookiebeleid.html privacybeleid.html bedrijfsgegevens.html bezoekers.html robots.txt sitemap.xml .pages/
+          cp index.html cookiebeleid.html privacybeleid.html bedrijfsgegevens.html bezoekers.html robots.txt sitemap.xml CNAME .pages/
           cp -R images .pages/images
           cp -R assets .pages/assets
           cp -R vendor .pages/vendor
