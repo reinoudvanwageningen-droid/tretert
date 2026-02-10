@@ -47,6 +47,13 @@
       padding: 28px 16px 48px;
     }
 
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
     .top-link {
       display: inline-flex;
       align-items: center;
@@ -54,7 +61,6 @@
       color: var(--brand);
       text-decoration: none;
       font-weight: 700;
-      margin-bottom: 18px;
     }
 
     .top-link:hover {
@@ -148,9 +154,12 @@
 </head>
 <body>
   <main class="container">
-    <a class="top-link" href="index.html" aria-label="Terug naar homepage">
-      &larr; Terug naar homepage
-    </a>
+    <div class="top-links">
+      <a class="top-link" href="index.html" aria-label="Terug naar homepage">
+        &larr; Terug naar homepage
+      </a>
+      <a class="top-link" href="bedrijfsgegevens.html">Bedrijfsgegevens</a>
+    </div>
 
     <section class="card">
       <h1>Cookiebeleid</h1>
@@ -210,10 +219,10 @@
 
     <section class="card">
       <h2>Bedrijfsgegevens</h2>
-      <p><strong>Caps Consult</strong></p>
-      <p>Mastenbroek 13, 4822 XG Breda</p>
-      <p>E-mail: <a href="mailto:capsconsult@outlook.com">capsconsult@outlook.com</a></p>
-      <p>Telefoon: <a href="tel:+31643725043">+31 6 43 72 50 43</a></p>
+      <p>
+        De volledige bedrijfsgegevens, inclusief btw-nummer en KvK-nummer, vindt u op de pagina
+        <a href="bedrijfsgegevens.html">Bedrijfsgegevens</a>.
+      </p>
     </section>
 
     <p class="footer-note">
