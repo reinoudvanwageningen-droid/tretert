@@ -232,7 +232,7 @@
   </nav>
 
   <!-- Hero -->
-  <section id="home" class="relative h-[100dvh] min-h-[560px] flex items-center justify-center diagonal-divider overflow-hidden">
+  <section id="home" class="relative min-h-[max(480px,100svh)] sm:min-h-[max(560px,100svh)] md:min-h-[max(560px,100dvh)] flex items-center justify-center diagonal-divider overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="w-full h-full object-cover scale-[1.02]" />
       <div class="absolute inset-0 hero-overlay"></div>
@@ -245,7 +245,7 @@
       <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-glow" style="animation-delay: 1.2s"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 md:pt-24">
       <div class="animate-fadeUp">
         <span class="inline-flex items-center gap-2 py-1.5 px-3 rounded-full bg-white/10 backdrop-blur border border-white/15 text-white text-xs md:text-sm font-extrabold tracking-wider mb-5 uppercase shadow-soft">
           <span class="inline-block w-2 h-2 rounded-full bg-caps-orange animate-pulse"></span>
@@ -418,20 +418,20 @@
       <div class="flex flex-col lg:flex-row items-center gap-8 md:gap-12 mt-4 md:mt-10">
         <div class="lg:w-1/2 order-2 lg:order-1">
           <h2 class="text-caps-orange font-extrabold uppercase tracking-wider text-sm mb-2">Over Caps Consult</h2>
-          <h3 class="text-2xl md:text-4xl font-black mb-4 md:mb-6">Uw project- &amp; werkvoorbereider</h3>
+          <h3 class="text-xl sm:text-2xl md:text-4xl font-black mb-4 md:mb-6">Uw project- &amp; werkvoorbereider</h3>
           <p class="text-gray-200/90 mb-6 text-base md:text-lg leading-relaxed">
             Caps Consult is uw partner in project- en werkvoorbereiding binnen de scheepsbouw.
             Met jarenlange praktijkervaring bereiden wij uw project grondig voor en begeleiden wij de uitvoering op de werf.
             Geen papieren tijgers, maar concrete actie: van tekening tot oplevering.
           </p>
 
-          <div class="grid grid-cols-2 gap-4 mt-6 md:mt-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 md:mt-8">
             <div class="bg-white/10 p-4 rounded-2xl backdrop-blur border border-white/10">
-              <h4 class="text-caps-orange font-black text-2xl">10+</h4>
+              <h4 class="text-caps-orange font-black text-xl sm:text-2xl">10+</h4>
               <p class="text-sm text-gray-200/80">Jaren ervaring</p>
             </div>
             <div class="bg-white/10 p-4 rounded-2xl backdrop-blur border border-white/10">
-              <h4 class="text-caps-orange font-black text-2xl">100%</h4>
+              <h4 class="text-caps-orange font-black text-xl sm:text-2xl">100%</h4>
               <p class="text-sm text-gray-200/80">Onafhankelijk</p>
             </div>
           </div>
@@ -445,12 +445,12 @@
         </div>
 
         <div class="lg:w-1/2 relative order-1 lg:order-2 w-full">
-          <div class="grid grid-cols-2 gap-3 md:gap-4">
-            <div class="bg-white/10 p-2 md:p-3 rounded-2xl shadow-soft2 transform -rotate-1 hover:rotate-0 transition duration-500 border border-white/10">
-              <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift met staalkabels op scheepswerf" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
+          <div class="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4">
+            <div class="bg-white/10 p-1.5 sm:p-2 md:p-3 rounded-xl sm:rounded-2xl shadow-soft2 transform -rotate-1 hover:rotate-0 transition duration-500 border border-white/10">
+              <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift met staalkabels op scheepswerf" class="rounded-lg sm:rounded-xl w-full object-cover h-32 sm:h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
             </div>
-            <div class="bg-white/10 p-2 md:p-3 rounded-2xl shadow-soft2 transform rotate-1 hover:rotate-0 transition duration-500 border border-white/10 mt-6">
-              <img src="images/staalkabel-scheepsdek.jpeg" alt="Versleten staalkabel op scheepsdek" class="rounded-xl w-full object-cover h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
+            <div class="bg-white/10 p-1.5 sm:p-2 md:p-3 rounded-xl sm:rounded-2xl shadow-soft2 transform rotate-1 hover:rotate-0 transition duration-500 border border-white/10 mt-4 sm:mt-6">
+              <img src="images/staalkabel-scheepsdek.jpeg" alt="Versleten staalkabel op scheepsdek" class="rounded-lg sm:rounded-xl w-full object-cover h-32 sm:h-40 md:h-56 grayscale hover:grayscale-0 transition duration-500" />
             </div>
           </div>
         </div>
@@ -495,11 +495,11 @@
         </article>
       </div>
 
-      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/staalkabel-scheepsdek.jpeg" alt="Staalkabel inspectie op scheepsdek" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met kranen en schepen" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
-        <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek bij haven" class="rounded-2xl shadow-soft h-40 md:h-48 w-full object-cover" />
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
+        <img src="images/kraaninstallatie-scheepsdek.jpeg" alt="Kraaninstallatie op scheepsdek" class="rounded-xl sm:rounded-2xl shadow-soft h-28 sm:h-40 md:h-48 w-full object-cover" />
+        <img src="images/staalkabel-scheepsdek.jpeg" alt="Staalkabel inspectie op scheepsdek" class="rounded-xl sm:rounded-2xl shadow-soft h-28 sm:h-40 md:h-48 w-full object-cover" />
+        <img src="images/luchtfoto-haven.jpeg" alt="Luchtfoto haven met kranen en schepen" class="rounded-xl sm:rounded-2xl shadow-soft h-28 sm:h-40 md:h-48 w-full object-cover" />
+        <img src="images/kraanlift-vanaf-dek.jpeg" alt="Kraanlift vanaf scheepsdek bij haven" class="rounded-xl sm:rounded-2xl shadow-soft h-28 sm:h-40 md:h-48 w-full object-cover" />
       </div>
     </div>
   </section>
@@ -507,10 +507,10 @@
   <!-- Visual Divider Strip -->
   <section class="w-full h-24 md:h-32 bg-gray-950 relative overflow-hidden flex items-center justify-center">
     <div class="absolute inset-0 opacity-25" style="background-image: repeating-linear-gradient(45deg, #0F3057 0, #0F3057 10px, transparent 10px, transparent 22px);"></div>
-    <h2 class="text-3xl md:text-4xl font-black text-white/10 uppercase tracking-[0.45em] md:tracking-[0.95em] absolute">CONSULT</h2>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-white/5 sm:text-white/10 uppercase tracking-[0.2em] sm:tracking-[0.35em] md:tracking-[0.6em] absolute">CONSULT</h2>
     <div class="z-10 text-center">
-      <p class="text-caps-orange font-extrabold uppercase tracking-wider text-sm md:text-base">Your Project</p>
-      <p class="text-white font-black text-xl md:text-2xl">Our Priority</p>
+      <p class="text-caps-orange font-extrabold uppercase tracking-wider text-xs sm:text-sm md:text-base">Your Project</p>
+      <p class="text-white font-black text-lg sm:text-xl md:text-2xl">Our Priority</p>
     </div>
   </section>
 
